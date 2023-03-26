@@ -6,6 +6,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
+import { HomeComponent } from './pages/home/home.component';
+import { UsersComponent } from './pages/users/users.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxEditorModule } from 'ngx-editor';
 
 
 @NgModule({
@@ -13,11 +17,16 @@ import { LayoutComponent } from './layout/layout.component';
     SidebarComponent,
     NavbarComponent,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    HomeComponent,
+    UsersComponent
   ],
   imports: [
     CommonModule,
-    StoreRoutingModule
+    StoreRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxEditorModule
   ]
 })
 export class StoreModule { }
